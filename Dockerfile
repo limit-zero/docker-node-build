@@ -1,7 +1,6 @@
-FROM mhart/alpine-node:6
+FROM node:6
 MAINTAINER solocommand
 
 # Build deps
-RUN npm install -g bower ember-cli yarn ionic cordova
-RUN apk add --no-cache git
+RUN npm install -g bower ember-cli ionic cordova
 WORKDIR /var/www/html
